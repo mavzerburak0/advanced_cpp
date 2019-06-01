@@ -34,8 +34,7 @@ public:
     const Date &getTimestamp() const;
     void setTimestamp(const Date &Timestamp);
 
-    string readFile(string fileName);
-    vector<string> tokenizeText(string text);
+    int returnRandomInt();
     string returnRandomName();
     char returnRandomChar();
 

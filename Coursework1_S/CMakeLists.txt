@@ -6,4 +6,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 
-add_executable(Coursework1_S main.cpp Date.cpp Date.h Item.cpp Item.h)
+add_executable(Coursework1_S main.cpp Date.cpp Date.h Item.cpp Item.h Data.cpp Data.h)
