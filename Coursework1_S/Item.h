@@ -38,6 +38,7 @@ public:
     string returnRandomName();
     char returnRandomChar();
 
+
     friend ostream &operator<<(ostream &os, const Item &item);
 
 };

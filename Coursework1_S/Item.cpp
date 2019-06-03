@@ -20,8 +20,8 @@ Item::Item() {
     this->Group = returnRandomChar();
     this->Subgroup = returnRandomInt();
     this->Name = returnRandomName();
-    Date * dateOne = new Date(1, 1, 1960);
-    Date * dateTwo = new Date(31, 5, 2019);
+    Date * dateOne = new Date(1, 1, 2019);
+    Date * dateTwo = new Date(1, 1, 2019);
     this->Timestamp = Date::CreateRandomDate(*dateOne, *dateTwo);
 
 }
