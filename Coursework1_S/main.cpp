@@ -5,8 +5,10 @@
 
 int main() {
 
-    // *** Create 20 random items *** //
-    Data * data = new Data(15);
+    int option;
+
+    // *** Create 100 random items *** //
+    Data * data = new Data(100);
 
     // *** Print them all *** //
     std::cout << "Printing data..." << std::endl;
@@ -103,5 +105,9 @@ int main() {
     std::cout << "All data after operations completed" << std::endl;
     data->printAll();
     std::cout << std::endl;
-    
+    std::cout << "Number of items after operations completed" << std::endl;
+    std::cout << data->countAll() << std::endl;
+    std::cout << std::endl;
+
+
 }

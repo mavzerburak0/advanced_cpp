@@ -1,11 +1,8 @@
+//
+// Created by root on 6/10/19.
+//
+
 #include <utility>
-
-//
-// Created by root on 6/1/19.
-//
-
-// Avoid using for loops. Instead of that apply STL algorithms.
-
 #include <iostream>
 #include <algorithm>
 #include <ctime>
@@ -237,19 +234,18 @@ bool Data::removeItemByDate(char g, int sg, Date d) {
 
     if (d.ToString()) {
         items.erase(
-            std::remove_if(
-                    items.begin(),
-                    items.end(),
-                    [d] (const Item & o) {
-                        return o.getTimestamp() == d;
+                std::remove_if(
+                        items.begin(),
+                        items.end(),
+                        [d] (const Item & o) {
+                            return o.getTimestamp() == d;
 
-                    })
-                    ),
+                        })
+        ),
 
-                    items.end();
+                items.end();
     } else {
         return false;
     }
 }
-
 
