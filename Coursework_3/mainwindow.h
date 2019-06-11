@@ -1,0 +1,34 @@
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
+
+#include <QMainWindow>
+#include <QtWidgets>
+#include <QtNetwork>
+
+namespace Ui {
+class MainWindow;
+}
+
+class MainWindow : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    explicit MainWindow(QWidget *parent = nullptr);
+    ~MainWindow();
+
+private:
+    Ui::MainWindow *ui;
+    QLocalSocket            *m_localSocket;
+
+private slots:
+    void on_ServerConnected();
+    void on_ServerDisconnected();
+    void on_DataArrived();
+    void on_connectBtnClicked();
+    void on_disconnectBtnClicked();
+    void on_sendBtnClicked();
+
+};
+
+#endif // MAINWINDOW_H
